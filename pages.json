@@ -1,0 +1,50 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "test商城"
+			}
+		},
+		{
+			"path": "pages/wode/index",
+			"style": {
+				"navigationBarTitleText": "test商城"
+			}
+		}
+	],
+	"easycom": {
+		"autoscan": true,		
+		"custom": {
+			"^u--(.*)": "uview-plus/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-plus/components/u-$1/u-$1.vue",
+	        "^u-([^-].*)": "uview-plus/components/u-$1/u-$1.vue"
+		}
+	},
+	"tabBar": {
+		"backgroundColor": "#ffffff",
+		"color": "#7A7E83,",
+		"selectedColor": "#3cc51f",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/image/home.png",
+				"selectedIconPath": "/static/image/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/wode/index",
+				"iconPath": "/static/image/我的.png",
+				"selectedIconPath": "/static/image/我的.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
